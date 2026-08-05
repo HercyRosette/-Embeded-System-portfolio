@@ -1,13 +1,13 @@
-##Project 11: Ambient-Reactive Smart Lighting Automation
+# Project 11: Ambient-Reactive Smart Lighting Automation
 
-##Problem This Solves
+## Problem This Solves
 
 Automatic lighting that reacts to both an occupancy/trigger cue and ambient light level is a
 genuine energy-efficiency feature used in modern building automation — this project builds that
 combined-condition logic with a manual override, since real automation should never fully lock
 out manual control.
 
-##Parts List
+## Parts List
 • Arduino Uno-compatible controller board
 • Sound sensor module
 • Photoresistor (LDR)
@@ -20,9 +20,9 @@ out manual control.
 • Resistors: 10kΩ (LDR divider), 1kΩ (transistor base), 220Ω (status LED)
 • Breadboard, jumper wires
 
-##Wiring Diagram
+## Wiring Diagram
 
-##Build & Test Process
+## Build & Test Process
 
 The sound sensor and photoresistor were each wired and tested independently, noting which
 reading direction corresponded to “darker” for the specific divider wiring used. The threshold
@@ -31,7 +31,7 @@ vidually. The combined sketch only responds to a sound trigger when the LDR indi
 conditions (daytime claps are explicitly ignored and logged as such), while the override button
 always works regardless of automatic state.
 
-##What I’d Improve With More Time
+## What I’d Improve With More Time
 
 • Add a time-of-day awareness (combining with the RTC module) so the system can distinguish “dark because it’s night” from “dark because a hand is covering the sensor,” reducing
 false triggers.
